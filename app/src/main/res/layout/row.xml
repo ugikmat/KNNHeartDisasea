@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/textNormalize"
+        android:layout_width="65dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:text="Normalize"/>
+    <TextView
+        android:id="@+id/textDistance"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:text="Distance"/>
+    <TextView
+        android:id="@+id/textVote"
+        android:layout_width="30dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:text="Vote"/>
+    <TextView
+        android:id="@+id/textAccurate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:text="Accurate"/>
+
+</LinearLayout>
