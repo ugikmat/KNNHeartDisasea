@@ -380,7 +380,7 @@ public class PatiensData {
 
     public static double standartDeviasiAge(){
         double sd=0;
-        sd=Math.sqrt(Math.abs((getAllPowAge()-Math.pow(getAllAge(),2))/(patientsTraining.size()+1)));
+        sd = Math.sqrt(Math.abs((getAllPowAge() / (patientsTraining.size() + 1)) - Math.pow(getMeanAge(), 2)));
         return sd;
     }
 
@@ -419,7 +419,7 @@ public class PatiensData {
 
     public static double standartDeviasiSex(){
         double sd=0;
-        sd=Math.sqrt(Math.abs(getAllPowSex()-Math.pow(getAllSex(),2))/(patientsTraining.size()+1));
+        sd = Math.sqrt(Math.abs((getAllPowSex() / (patientsTraining.size() + 1)) - Math.pow(getMeanSex(), 2)));
         return sd;
     }
 
@@ -461,7 +461,7 @@ public class PatiensData {
         xPatient.addAll(get(patientsTraining));
         xPatient.add(get(newPatient));
         double sd=0;
-        sd=Math.sqrt(Math.abs(getAllPowCp()-Math.pow(getAllCp(),2))/(patientsTraining.size()+1));
+        sd = Math.sqrt(Math.abs((getAllPowCp() / (patientsTraining.size() + 1)) - Math.pow(getMeanCp(), 2)));
         return sd;
     }
 
@@ -503,7 +503,7 @@ public class PatiensData {
         xPatient.addAll(get(patientsTraining));
         xPatient.add(get(newPatient));
         double sd=0;
-        sd=Math.sqrt(Math.abs(getAllPowThresbps()-Math.pow(getAllThresbps(),2))/(patientsTraining.size()+1));
+        sd = Math.sqrt(Math.abs((getAllPowThresbps() / (patientsTraining.size() + 1)) - Math.pow(getMeanThresbps(), 2)));
         return sd;
     }
 
@@ -547,7 +547,7 @@ public class PatiensData {
         x=getAllChol();
         tSize=patientsTraining.size()+1;
         top=(getAllPowChol()-Math.pow(getAllChol(),2));
-        sd=Math.sqrt(Math.abs(getAllPowChol()-Math.pow(getAllChol(),2))/(patientsTraining.size()+1));
+        sd = Math.sqrt(Math.abs((getAllPowChol() / (patientsTraining.size() + 1)) - Math.pow(getMeanChol(), 2)));
         return sd;
     }
 
@@ -586,7 +586,7 @@ public class PatiensData {
 
     public static double standartDeviasiFbs(){
         double sd=0;
-        sd=Math.sqrt(Math.abs(getAllPowFbs()-Math.pow(getAllFbs(),2))/(patientsTraining.size()+1));
+        sd = Math.sqrt(Math.abs((getAllPowFbs() / (patientsTraining.size() + 1)) - Math.pow(getMeanFbs(), 2)));
         return sd;
     }
 
@@ -626,7 +626,7 @@ public class PatiensData {
     public static double standartDeviasiRestecg(){
 
         double sd=0;
-        sd=Math.sqrt(Math.abs(getAllPowRestecg()-Math.pow(getAllRestecg(),2))/(patientsTraining.size()+1));
+        sd = Math.sqrt(Math.abs((getAllPowRestecg() / (patientsTraining.size() + 1)) - Math.pow(getMeanRestecg(), 2)));
         return sd;
     }
 
@@ -666,7 +666,7 @@ public class PatiensData {
 
     public static double standartDeviasiThalach(){
         double sd=0;
-        sd=Math.sqrt(Math.abs(getAllPowThalach()-Math.pow(getAllThalach(),2))/(patientsTraining.size()+1));
+        sd = Math.sqrt(Math.abs((getAllPowThalach() / (patientsTraining.size() + 1)) - Math.pow(getMeanThalach(), 2)));
         return sd;
     }
 
@@ -705,7 +705,7 @@ public class PatiensData {
 
     public static double standartDeviasiExang(){
         double sd=0;
-        sd=Math.sqrt(Math.abs(getAllPowExang()-Math.pow(getAllExang(),2))/(patientsTraining.size()+1));
+        sd = Math.sqrt(Math.abs((getAllPowExang() / (patientsTraining.size() + 1)) - Math.pow(getMeanExang(), 2)));
         return sd;
     }
 
@@ -744,7 +744,7 @@ public class PatiensData {
 
     public static double standartDeviasiOldpeak(){
         double sd=0;
-        sd=Math.sqrt(Math.abs(getAllPowOldpeak()-Math.pow(getAllOldpeak(),2))/(patientsTraining.size()+1));
+        sd = Math.sqrt(Math.abs((getAllPowOldpeak() / (patientsTraining.size() + 1)) - Math.pow(getMeanOldpeak(), 2)));
         return sd;
     }
 
@@ -783,7 +783,7 @@ public class PatiensData {
 
     public static double standartDeviasiSlope(){
         double sd=0;
-        sd=Math.sqrt(Math.abs(getAllPowSlope()-Math.pow(getAllSlope(),2))/(patientsTraining.size()+1));
+        sd = Math.sqrt(Math.abs((getAllPowSlope() / (patientsTraining.size() + 1)) - Math.pow(getMeanSlope(), 2)));
         return sd;
     }
 
@@ -822,7 +822,7 @@ public class PatiensData {
 
     public static double standartDeviasiCa(){
         double sd=0;
-        sd=Math.sqrt(Math.abs(getAllPowCa()-Math.pow(getAllCa(),2))/(patientsTraining.size()+1));
+        sd = Math.sqrt(Math.abs((getAllPowCa() / (patientsTraining.size() + 1)) - Math.pow(getMeanCa(), 2)));
         return sd;
     }
 
@@ -834,6 +834,7 @@ public class PatiensData {
         for(Patient patient:xPatient){
             Thal+=patient.getThal();
         }
+
         return Thal;
     }
 
@@ -866,7 +867,7 @@ public class PatiensData {
         x=getAllThal();
         tSize=patientsTraining.size()+1;
         top=(getAllPowThal()-Math.pow(getAllThal(),2));
-        sd=Math.sqrt(Math.abs(getAllPowThal()-Math.pow(getAllThal(),2))/(patientsTraining.size()+1));
+        sd = Math.sqrt(Math.abs((getAllPowThal() / (patientsTraining.size() + 1)) - Math.pow(getMeanThal(), 2)));
         return sd;
     }
 
