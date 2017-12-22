@@ -243,7 +243,7 @@ public class MainActivity extends AppCompatActivity {
             vote[i]=0;
             for(int j=0;j<kPatient.size();j++){
                 if(kPatient.get(j).getNum()==i){
-                    vote[i]+=(1/kPatient.get(j).getDistance());
+                    vote[i] += (1 / Math.pow(kPatient.get(j).getDistance(), 2));
                 }
             }
         }
