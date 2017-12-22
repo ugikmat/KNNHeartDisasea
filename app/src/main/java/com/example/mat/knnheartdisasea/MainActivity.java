@@ -124,6 +124,7 @@ public class MainActivity extends AppCompatActivity {
                                                 left++;
                                             }
                                         }
+
                                         double res=((double) right/(double)patientsTest.size())*100;
                                         testResult.add(new Test(norm,dist,vote,((double) right/(double)patientsTest.size())*100));
                                     }
